@@ -221,9 +221,9 @@ class Rectangle {
     var height: Int
     var width: Int
     
-    init(height: Int, weight: Int) {
+    init(height: Int, width: Int) {
         self.height = height
-        self.width = weight
+        self.width = width
     }
     
     func getArea() -> String {
@@ -241,9 +241,9 @@ class Square: Rectangle {
     }
 }
 
-let rectangle = Rectangle(height: 2, weight: 3)
+let rectangle = Rectangle(height: 2, width: 3)
 print("\(rectangle.getArea())")
-let square = Square(height: 2, weight: 3)
+let square = Square(height: 2, width: 3)
 print("\(square.getArea())")
 
 /*:
