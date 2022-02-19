@@ -1,7 +1,9 @@
 import Foundation
 
-class BeverageFactory {
-    class func createBeverage(beverageName: String) -> Beverage? {
+open class BeverageFactory {
+    public init() {}
+    
+    func createBeverage(beverageName: String) -> Beverage? {
         var beverage: Beverage?
         
         switch beverageName {

@@ -1,8 +1,9 @@
 package simplefactorypattern.source
 
-class BeverageShop {
+class BeverageShop(private val factory: BeverageFactory) {
+
     fun order(beverageName: String): Beverage? {
-        val beverage: Beverage? = BeverageFactory.createBeverage(beverageName)
+        val beverage: Beverage? = factory.createBeverage(beverageName)
 
         beverage?.addSuger(5)
         beverage?.addIce(5)

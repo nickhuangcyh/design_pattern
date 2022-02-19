@@ -1,6 +1,6 @@
 package simplefactorypattern.source
 
-object BeverageFactory {
+class BeverageFactory {
     fun createBeverage(beverageName: String): Beverage? {
         return when (beverageName) {
             "black tea" -> BlackTea()
