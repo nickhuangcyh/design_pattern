@@ -27,3 +27,8 @@ tasks.withType<KotlinCompile>() {
 application {
     mainClass.set("MainKt")
 }
+
+dependencies {
+    // 添加 org.json 依賴
+    implementation("org.json:json:20210307")
+}
